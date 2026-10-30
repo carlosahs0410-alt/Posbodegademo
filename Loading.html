@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciando POS...</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #111827;
+            color: #f3f4f6;
+            font-family: sans-serif;
+        }
+
+        .loader {
+            border: 8px solid #374151;
+            border-top: 8px solid #3b82f6;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        p { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="loader"></div>
+    <p>Conectando con POS Bodega...</p>
+
+    <script>
+        // Cambia .html por .php si tu archivo original termina en .php
+        setTimeout(function() {
+            window.location.href = "pos-bodega-db.html"; 
+        }, 2500); 
+    </script>
+</body>
+</html>
